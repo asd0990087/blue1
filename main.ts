@@ -6,6 +6,13 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
 let _87 = 0
 _87 = 0
 let _1 = 1
+bluetooth.startTemperatureService()
+bluetooth.startMagnetometerService()
+bluetooth.startLEDService()
+bluetooth.startIOPinService()
+bluetooth.startButtonService()
+bluetooth.startAccelerometerService()
+bluetooth.startUartService()
 basic.forever(function () {
     if (_87 == 1) {
         basic.showString("A")
