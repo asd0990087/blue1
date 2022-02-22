@@ -18,10 +18,9 @@ basic.forever(function () {
         basic.showString("A")
         _1 += 6
         robotbit.GeekServo2KG(robotbit.Servos.S1, _1)
-        basic.pause(50)
+        basic.pause(20)
     } else {
         basic.clearScreen()
-        robotbit.MotorStopAll()
     }
 })
 basic.forever(function () {
@@ -29,9 +28,8 @@ basic.forever(function () {
         basic.showString("B")
         _1 += -6
         robotbit.GeekServo2KG(robotbit.Servos.S1, _1)
-        basic.pause(50)
+        basic.pause(20)
     } else {
         basic.clearScreen()
-        robotbit.MotorStopAll()
     }
 })
